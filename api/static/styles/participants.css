@@ -1,65 +1,278 @@
-.nav {
-    display: flex;
+@media only screen and (min-width : 651px) {
+    .mobile_nav {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 25%;
+        height: 50px;
+        color: white;
+        background: rgba(147,91,80,255);
+        font-size: 25px;
+        font-family: "Kelson", Arial, serif;
+        font-weight: normal;
+        font-style:normal;
+        letter-spacing: 1px;
+    }
+
+    .nav a:hover {
+        background: rgba(155,230,157,255);
+    }
+
+    .content {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .name {
+        padding-left: 25%;
+        font-size: 35px;
+        font-family: 'PT Sans Caption', sans-serif;
+    }
+
+    .contacts {
+        gap: 10px;
+        padding-top: 10px;
+        padding-left: 25%;
+    }
+
+    .vk img {
+        width: 36px;
+        height: 36px;
+    }
+    .tg img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .bio {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        padding-left: 25%;
+        width: 50%;
+        color: #999999 !important;
+        font-size: 25px;
+    }
+
+    .photo_mobile {
+        display: none;
+    }
+
+    .photo {
+        width: 50%;
+        padding-right: 5%;
+    }
 }
 
-.nav a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 25%;
-    height: 50px;
-    color: white;
-    background: rgba(147,91,80,255);
-    font-size: 25px;
-    font-family: "Kelson", Arial, serif;
-    font-weight: normal;
-    font-style:normal;
-    letter-spacing: 1px;
-}
+@media screen and (max-width: 650px) {
+    .nav {
+        display: none;
+    }
 
-.nav a:hover {
-    background: rgba(155,230,157,255);
-}
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
 
-.content {
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.name {
-    padding-left: 25%;
-    font-size: 35px;
-    font-family: 'PT Sans Caption', sans-serif;
-}
+    .menu_title {
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: "Kelson", Arial, serif;
+    }
 
-.contacts {
-    gap: 10px;
-    padding-top: 10px;
-    padding-left: 25%;
-}
+    .top-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #00BAF0;
+      background: rgba(147,91,80,255);
+      color: #FFF;
+      height: 50px;
+      padding: 1em;
+    }
 
-.vk img {
-    width: 36px;
-    height: 36px;
-}
-.tg img {
-    width: 36px;
-    height: 36px;
-}
+    .menu {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
 
-.bio {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    padding-left: 25%;
-    width: 50%;
-    color: #999999 !important;
-    font-size: 25px;
-}
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0 1rem;
+      overflow: hidden;
+      background: rgba(85,78,86,255)
+    }
 
-.photo {
-    width: 50%;
-    padding-right: 5%;
+    .menu li a {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: "Kelson", Arial, serif;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    .menu li a:hover {
+        background: rgba(155,230,157,255);
+    }
+
+    .menu-button-container {
+      display: none;
+      height: 100%;
+      width: 30px;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      height: 4px;
+      width: 30px;
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+    }
+
+    .menu-button::before {
+      content: '';
+      margin-top: -8px;
+    }
+
+    .menu-button::after {
+      content: '';
+      margin-top: 8px;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+      margin-top: 0px;
+      transform: rotate(405deg);
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button {
+      background: rgba(255, 255, 255, 0);
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+      margin-top: 0px;
+      transform: rotate(-405deg);
+    }
+    .menu-button-container {
+        display: flex;
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #menu-toggle:checked ~ .menu li {
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: rgba(147,91,80,255);
+      }
+
+      .content {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        font-family: 'PT Sans Caption', sans-serif;
+    }
+
+    .contacts {
+        gap: 10px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .vk img {
+        width: 36px;
+        height: 36px;
+    }
+    .tg img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .bio {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        /*width: 50%;*/
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #999999 !important;
+        font-size: 25px;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .photo_mobile {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .photo_mobile img {
+        width: 90%;
+    }
 }
