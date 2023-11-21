@@ -1,54 +1,54 @@
-.title {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    font-size: 35px;
-    font-weight: bold;
-    font-family: "Montserrat", Arial, serif;
-}
-
-.suggestion {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-textarea {
-  width: 500px;
-  height: 40px;
-  padding: 5px;
-  box-sizing: border-box;
-  border: 2px solid rgba(111,215,163,255);
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 20px;
-  resize: none;
-  outline: none;
-  overflow: hidden;
-}
-
-.error {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    color: red;
-}
-
-.btn {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-.btn button {
-    height: 36px;
-    width: 200px;
-    border: 0;
-    border-radius: 5px;
-    background: rgba(155,230,157,255);
-    color: white;
-    font-weight: bold;
-    font-family: "Montserrat", Arial, serif;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .title {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: "Montserrat", Arial, serif;
+    }
+    
+    .suggestion {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    textarea {
+      width: 500px;
+      height: 40px;
+      padding: 5px;
+      box-sizing: border-box;
+      border: 2px solid rgba(111,215,163,255);
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 20px;
+      resize: none;
+      outline: none;
+      overflow: hidden;
+    }
+    
+    .error {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        color: red;
+    }
+    
+    .btn {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .btn button {
+        height: 36px;
+        width: 200px;
+        border: 0;
+        border-radius: 5px;
+        background: rgba(155,230,157,255);
+        color: white;
+        font-weight: bold;
+        font-family: "Montserrat", Arial, serif;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

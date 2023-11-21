@@ -15,7 +15,7 @@ def send_suggestion():
     if request.method == 'POST':
         text = re.sub(r"\s+", '', request.form['textarea'])
         if text != "":
-            send_email(text)
+            send_email(request.form['textarea'])
             return redirect("/")
         else:
             flash('Ваше предложение пустое')
