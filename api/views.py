@@ -52,6 +52,6 @@ def participants():
 def about():
     return render_template("about.html")
 
-@app.errorhandler(404)
+@app.route("/404")
 def not_found():
     return redirect("/")
