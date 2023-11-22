@@ -7,6 +7,7 @@ from email.message import EmailMessage
 
 @app.route("/")
 def home():
+    return redirect("/participants")
     return render_template("home.html")
 
 
