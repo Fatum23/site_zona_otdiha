@@ -1,4 +1,8 @@
 @media only screen and (min-width : 651px) {
+    .mobile_nav {
+        display: none;
+    }
+
     .nav {
         display: flex;
     }
