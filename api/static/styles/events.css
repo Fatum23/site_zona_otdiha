@@ -1,3 +1,13 @@
+.content {
+    padding-top: 10px;
+    /*width: 50%;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #999999 !important;
+    font-size: 25px;
+}
+
+
 @media only screen and (min-width : 651px) {
     .mobile_nav {
         display: none;
